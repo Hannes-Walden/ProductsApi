@@ -13,18 +13,15 @@
         "configurations": [
             {
                 "name": "Launch API",
-                "type": "coreclr",
+                "type": "dotnet",
                 "request": "launch",
-                "preLaunchTask": "build",
-                "program": "${workspaceFolder}/ProductsApi",
-                "cwd": "${workspaceFolder}/ProductsApi",
-                "stopAtEntry": false
+                "projectPath": "${workspaceFolder}/ProductsApi/ProductsApi.csproj"
             },
             {
                 "name": "Launch Frontend",
                 "type": "node",
                 "request": "launch",
-                "cwd": "${workspaceFolder}/frontend",
+                "cwd": "${workspaceFolder}/ProductsApi",
                 "runtimeExecutable": "python3",
                 "runtimeArgs": ["-m", "http.server", "5000"]
             }
